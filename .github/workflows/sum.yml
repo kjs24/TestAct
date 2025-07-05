@@ -23,14 +23,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install openai
 
-      - name: 환경변수 설정
-        # GitHub 리포지토리의 Secrets에 OPENAI_API_KEY 등록 필요
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
       - name: LLM 요약 스크립트 실행
         run: |
           python summarize.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: 아티팩트 업로드
         uses: actions/upload-artifact@v3
