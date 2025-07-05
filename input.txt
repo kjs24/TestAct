@@ -1,1 +1,1 @@
-나는 지금 llm 사용법을 공부하고 있고 시작으로 이렇게 간단한 gpt api 쓴 코드와 yml 파일을 이용해서 github action을 구현하는 연습을 하는중.
+나는 지금 llm 사용법을 공부하고 있고 시작으로 이렇게 간단한 gpt api 쓴 코드와 yml 파일을 이용해서 github action을 구현하는 연습을 함.
