@@ -31,4 +31,6 @@ jobs:
       - name: 아티팩트 업로드
         uses: actions/upload-artifact@v4
         with:
-          name:
+          name: summary
+          path: summary.txt
+          if-no-files-found: warn
